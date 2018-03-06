@@ -1,0 +1,143 @@
+{
+  "type": "ScenarioViewer",
+  "name": "Falklands War",
+  "startTime": 386546400000,
+  "sides": [
+    {
+      "name": "Great Britain",
+      "units": [
+        {
+          "name": "TG 317.1 LG",
+          "sidc": "10031004001211000000",
+          "subUnits": [
+            {
+              "name": "3 Cdo Bde",
+              "sidc": "10031000181211004600",
+              "subUnits": [
+                {
+                  "name": "40 Cdo",
+                  "sidc": "10031000161211004600"
+                },
+                {
+                  "name": "42 Cdo",
+                  "sidc": "10031000161211004600"
+                },
+                {
+                  "name": "45 Cdo",
+                  "sidc": "10031000161211004600"
+                },
+                {
+                  "name": "29 Cdo RA",
+                  "sidc": "10031000161303000000"
+                },
+                {
+                  "name": "2 Para",
+                  "sidc": "10031000161211000001",
+                  "subUnits": [
+                    {
+                      "name": "29 FB",
+                      "sidc": "10031000151303000000"
+                    },
+                    {
+                      "name": "43 AD",
+                      "sidc": "10031000141301020000"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "5 Inf Bde",
+              "sidc": "10031000181211000000"
+            }
+          ]
+        },
+        {
+          "name": "TG 317.8 CVG",
+          "sidc": "10033000001210030000",
+          "subUnits": [
+            {
+              "name": "CV Hermes",
+              "sidc": "10033000001201000000",
+              "subUnits": [
+                {
+                  "name": "H1",
+                  "sidc": "10030100001101050000"
+                }
+              ]
+            },
+            {
+              "name": "CV Invincible",
+              "sidc": "10033000001201000000"
+            },
+            {
+              "name": "DD Glamorgan",
+              "sidc": "10033000001202030000"
+            }
+          ]
+        },
+        {
+          "name": "TG 324.3 SS",
+          "sidc": "10033000001210030000",
+          "subUnits": [
+            {
+              "name": "SSN",
+              "sidc": "10033500001101000006"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Argentina",
+      "units": [
+        {
+          "name": "3 Mech Inf Bde",
+          "sidc": "10051000181211020000",
+          "subUnits": [
+            {
+              "name": "4th Inf Reg",
+              "sidc": "10061000171211000000",
+              "subUnits": [
+                {
+                  "name": "AA1",
+                  "sidc": "10061500001110010000"
+                },
+                {
+                  "name": "AA2",
+                  "sidc": "10061500001105000000"
+                }
+              ]
+            },
+            {
+              "name": "12th Inf Reg",
+              "sidc": "10061000171211000000"
+            },
+            {
+              "name": "5th Inf Reg",
+              "sidc": "10061000171211000000"
+            },
+            {
+              "name": "8th Inf Reg",
+              "sidc": "10061000171211000000"
+            }
+          ]
+        },
+        {
+          "name": "10 Mech Inf Bde",
+          "sidc": "10051000181211040000"
+        },
+        {
+          "name": "TG",
+          "sidc": "10063000001210030000",
+          "subUnits": [
+            {
+              "name": "ARA Belgrano",
+              "sidc": "10063040001202020000"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

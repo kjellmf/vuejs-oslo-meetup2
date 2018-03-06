@@ -1,0 +1,6 @@
+export const SET_SCENARIO = 'SET_SCENARIO';
+export const SET_CURRENT_UNIT = 'SET_CURRENT_UNIT';
+export const SET_DRAGGED_UNIT = 'SET_DRAGGED_UNIT';
+export const CLEAR_DRAGGED_UNIT = 'CLEAR_DRAGGED_UNIT';
+export const SET_START_TIME = 'SET_START_TIME';
+export const SET_END_TIME = 'SET_END_TIME';
