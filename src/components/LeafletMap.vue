@@ -18,15 +18,22 @@ export default {
     let map = L.map("map");
     this.map = map;
     map.setView(this.center, this.zoom);
+    
     let osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     });
-    /*
-    let osm2 = L.tileLayer('http://localhost:8090/osm/{z}/{x}/{y}.png', {
+    let satellite = L.tileLayer.provider('Esri.WorldImagery');
+    
+    /* Backup
+    let osm = L.tileLayer('http://localhost:8090/osm/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     });
+    
+    let satellite = L.tileLayer('http://localhost:8090/esrisat/{z}/{x}/{y}.png', {
+      attribution: '&copy; ESRI contributors'
+    });
     */
-    let satellite = L.tileLayer.provider('Esri.WorldImagery');
+    
     osm.addTo(map);
 
     let baseLayers = {"OpenStreetMap": osm, "Esri.WorldImagery": satellite};

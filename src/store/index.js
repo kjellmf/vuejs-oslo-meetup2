@@ -4,7 +4,7 @@ import Vuex from 'vuex';
 import {ADD_UNIT_POSITION, LOAD_SCENARIO, SELECT_UNIT, SET_CURRENT_TIME} from './action-types';
 import {
   CLEAR_DRAGGED_UNIT, SET_CURRENT_UNIT, SET_DRAGGED_UNIT, SET_END_TIME, SET_SCENARIO,
-  SET_START_TIME
+  SET_START_TIME,
 } from './mutation-types';
 import {prepareScenario, walkSide} from './utils';
 
@@ -20,6 +20,7 @@ export default new Vuex.Store({
     startTime: 0,
     endTime: 0,
   },
+
   mutations: {
     [SET_SCENARIO](state, scenario) {
       state.scenario = scenario;
@@ -50,7 +51,7 @@ export default new Vuex.Store({
   actions: {
     [LOAD_SCENARIO]({commit, state, dispatch}, scenario) {
       const scn = prepareScenario(scenario);
-      const startTime = scn.startTime;
+      const {startTime} = scn;
 
       commit(SET_SCENARIO, scn);
       if (startTime) {

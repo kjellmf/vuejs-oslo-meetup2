@@ -53,9 +53,11 @@ export default {
     toggle() {
       this.isOpen = !this.isOpen;
     },
+
     select() {
       this.$store.dispatch(SELECT_UNIT, this.unit);
     },
+    
     dragStart(ev) {
       this.$store.commit(SET_DRAGGED_UNIT, this.unit);
       ev.dataTransfer.setData("text", "move-unit");

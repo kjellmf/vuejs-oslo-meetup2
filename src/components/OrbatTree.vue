@@ -1,11 +1,11 @@
 <template>
   <ul>
-    <orbat-item v-for="rootUnit in units" :unit="rootUnit"></orbat-item>
+    <orbat-item v-for="rootUnit in units" :unit="rootUnit" :key="rootUnit.name"></orbat-item>
   </ul>
 </template>
 
 <script>
-import OrbatItem from "./OrbatItem";
+import OrbatItem from "./OrbatItem.vue";
 
 export default {
   components: {OrbatItem},
