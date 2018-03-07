@@ -1,5 +1,5 @@
 <template>
-  <div class="a-map" @dragover="onDragOver" @drop="onDrop">
+  <div class="a-map" @dragover.prevent @drop="onDrop">
     <leaflet-map :center="center" :zoom="8" class="a-map" @map-initialized="onMapInitialized"/>
   </div>
 </template>
@@ -68,7 +68,7 @@ export default {
     },
 
     onDragOver(ev) {
-      ev.preventDefault();
+      //ev.preventDefault();
     },
 
     setupMarkers() {
