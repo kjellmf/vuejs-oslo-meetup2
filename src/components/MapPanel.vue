@@ -67,10 +67,6 @@ export default {
       this.map = lMap;
     },
 
-    onDragOver(ev) {
-      //ev.preventDefault();
-    },
-
     setupMarkers() {
       this.markers.clearLayers();
       for (const unit of this.visibleUnits) {
